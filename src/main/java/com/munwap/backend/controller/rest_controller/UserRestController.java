@@ -13,7 +13,7 @@ import com.munwap.backend.dtos.UserDTO;
 import com.munwap.backend.service.UserService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/users")
 public class UserRestController {
 

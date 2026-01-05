@@ -54,6 +54,14 @@ public class DataBaseInit implements ApplicationRunner {
                         .build();
                 userRepository.save(normalUser);
             }
+
+            // NEW Special User
+            UserEntity specialUser = UserEntity.builder()
+                    .full_name("John Doe")
+                    .email("b7C6o@example.com")
+                    .password("password")
+                    .roles(List.of(roleRepository.findByName("USER")))
+                    .build();
         }
 
     }
